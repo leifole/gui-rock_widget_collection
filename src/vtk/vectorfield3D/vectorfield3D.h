@@ -62,7 +62,11 @@ public slots:
                  double x, double y, double z);
 
   /** adapt last inserted vector */
-  void adaptVector(double px, double py, double pz,
+  void adaptLastVector(double px, double py, double pz,
+                 double x, double y, double z);
+
+  /** adapt last inserted vector */
+  void adaptVector(int id, double px, double py, double pz,
                  double x, double y, double z);
   /** Toggle visibility of scalar range legend bar */
   void showScalarBar(bool b);
